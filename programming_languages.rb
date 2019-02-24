@@ -7,10 +7,13 @@ def reformat_languages(languages)
     }
   }
   new_hash.each {|key, value|
+    new_hash[key][:style] = []
     if languages[:oo].has_key?(key)
-      new_hash[key][:style] = [:oo]
-    elsif languages[:functional].has_key?(key)
-      new_hash[key][:style] = [:functional]
+      new_hash[key][:style] << :oo
+    end  
+    if languages[:functional].has_key?(key)
+      new_hash[key][:style] << :functional
     end
   }
+
 end
