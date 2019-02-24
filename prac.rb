@@ -53,3 +53,5 @@ def reformat_languages(languages)
 end
 
 languages[:oo][:ruby][:mera] = "cool"
+
+puts languages
