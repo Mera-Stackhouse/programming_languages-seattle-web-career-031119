@@ -42,7 +42,6 @@ def reformat_languages(languages)
       new_hash[key] = value
     }
   }
-  puts new_hash
   new_hash.collect {|key, value|
     if languages[:oo].has_key?(key)
       value[:style] = [:oo]
@@ -50,9 +49,7 @@ def reformat_languages(languages)
       value[:style] = [:functional]
     end
   }
-    
-  
   
 end
 
-reformat_languages(languages)
+languages[:oo][:ruby][:mera] = "cool"
