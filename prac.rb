@@ -43,6 +43,6 @@ def reformat_languages(languages)
       new_hash[key] = value
     }
   }
-  
+  puts new_hash
   
 end
