@@ -48,6 +48,7 @@ def reformat_languages(languages)
     elsif languages[:functional].has_key?(key)
       value[:style] = [:functional]
     end
+  }
     
   
   
