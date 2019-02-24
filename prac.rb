@@ -44,9 +44,9 @@ def reformat_languages(languages)
   }
   new_hash.collect {|key, value|
     if languages[:oo].has_key?(key)
-      value[:style] = [:oo]
+      key[:style] = [:oo]
     elsif languages[:functional].has_key?(key)
-      value[:style] = [:functional]
+      key[:style] = [:functional]
     end
   }
   
