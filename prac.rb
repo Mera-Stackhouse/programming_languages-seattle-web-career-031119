@@ -42,7 +42,8 @@ def reformat_languages(languages)
       new_hash[key] = value
     }
   }
-  puts new_hash.collect {|key, value|
+  puts new_hash
+  new_hash.collect {|key, value|
     if languages[:oo].has_key?(key)
       value[:style] = [:oo]
     elsif languages[:functional].has_key?(key)
