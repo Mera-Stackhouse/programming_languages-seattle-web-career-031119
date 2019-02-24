@@ -42,7 +42,13 @@ def reformat_languages(languages)
       new_hash[key] = value
     }
   }
-  new_hash.each {|key, value|
+  new_hash.collect {|key, value|
+    if languages[:oo].has_key?(key)
+      value[:style] = [:oo]
+    elsif languages[:functional].has_key?(key)
+      value[:style] = [:functional]
+    end
+    
   
   
 end
