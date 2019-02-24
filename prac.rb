@@ -42,7 +42,8 @@ def reformat_languages(languages)
       new_hash[key] = value
     }
   }
-  puts new_hash
+  new_hash.each {|key, value|
+  
   
 end
 
