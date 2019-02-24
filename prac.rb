@@ -49,9 +49,5 @@ def reformat_languages(languages)
       key[:style] = [:functional]
     end
   }
-  
+  puts new_hash
 end
-
-languages[:oo][:ruby][:mera] = "cool"
-
-puts languages
