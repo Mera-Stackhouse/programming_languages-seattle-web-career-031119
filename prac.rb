@@ -46,11 +46,11 @@ def reformat_languages(languages)
     new_hash[key][:style] = []
     if languages[:oo].has_key?(key)
       new_hash[key][:style] << :oo
+      puts key
     elsif languages[:functional].has_key?(key)
       new_hash[key][:style] << :functional
     end
   }
-  puts new_hash
 end
 
 reformat_languages(languages)
