@@ -49,7 +49,6 @@ def reformat_languages(languages)
       new_hash[key][:style] = [:functional]
     end
   }
-  puts new_hash
 end
 
 reformat_languages(languages)
